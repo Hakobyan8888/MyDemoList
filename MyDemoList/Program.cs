@@ -6,7 +6,14 @@ namespace MyDemoList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyList<int> list = new MyList<int>();
+            list.Add(123);
+            list.Add(738);
+            list.Add(193);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
